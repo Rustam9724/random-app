@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Roboto;
+  src: url("assets/Roboto.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 1.3vh;
+  color: #000;
+}
+
+.header {
+  height: 10vh;
+  font-family: Roboto;
+  font-size: 5vh;
+  text-align: center;
+  background: linear-gradient(#64dd17, #f1f8e9);
+  color: #E5184B;
+  margin-bottom: 13vh;
+  padding-top: 2vh;
+  box-shadow: 0 0 0.4vw #64dd17;
+  border-bottom: 0.146vw solid #E5184B;
+}
+
+@media (max-width: 422px) {
+  .header {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 299px) {
+  .header {
+    font-size: 3.5vh;
+  }
+}
+
+.main {
+  width: 70vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.1vw;
+  row-gap: 2.61vh;
+}
+
+@media (max-width: 374px) {
+  .main {
+    justify-content: center;
+  }
+}
+
+.random-card {
+  position: relative;
+  width: 21vw;
+  height: 13.0548vh;
+  background: linear-gradient(#64dd17, #f1f8e9);
+  padding: 1rem;
+  border: 2px solid #E5184B;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #64dd17;
+  cursor: pointer;
+}
+
+@media (max-width: 514px) {
+  .random-card {
+    width: 31vw;
+  }
+}
+
+@media (max-width: 374px) {
+  .random-card {
+    width: 42vw;
+  }
+}
+
+.random-card__type {
+  font-family: Roboto;
+  color: #E5184B;
+  font-size: 2.61vw;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+
+@media (max-width: 674px) {
+  .random-card__type {
+    font-size: 1.5rem;
+  }
+}
+
+.random-card__icon {
+  font-size: 3rem;
 }
