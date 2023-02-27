@@ -86,6 +86,10 @@ html, body {
   cursor: pointer;
 }
 
+.random-card:hover {
+  background: #64dd17;
+}
+ 
 @media (max-width: 514px) {
   .random-card {
     width: 31vw;
@@ -115,4 +119,78 @@ html, body {
 
 .random-card__icon {
   font-size: 3rem;
+}
+
+.date-header {
+  margin-bottom: 20px;
+}
+
+.control-panel {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto 75px;
+}
+
+.control-btn {
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(#601EAA, #A174D4);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.control-btn:hover {
+  background: #601EAA;
+}
+
+.date-main {
+  width: 1300px;  
+  margin: 0 auto;
+}
+
+.date-result {
+  max-width: 1300px;
+  min-width: 400px;
+  width: min-content;
+  height: 100px;
+  margin: 0 auto 50px;
+  box-shadow: 0 0 6px #bdbdbd;
+  font-size: 20px;
+  padding: 5px;
+  font-family: Roboto;
+  color: #601EAA;
+  font-weight: 600;
+  overflow: auto;
+  line-height: 120%;
+}
+
+.date-buttons {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  margin: 0 auto;
+}
+
+.date-btn {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#64dd17, #f1f8e9);
+  padding: 1rem;
+  border: 2px solid #E5184B;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #64dd17;
+  cursor: pointer;
+  color: #E5184B;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.date-btn:hover {
+  background: #64dd17;
 }
