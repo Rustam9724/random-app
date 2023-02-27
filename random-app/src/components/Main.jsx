@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Main() {
     return <>
         <header className="header">
@@ -5,8 +7,10 @@ function Main() {
         </header>
         <div className="main">
             <div className="random-card">
-                <p className="random-card__icon">&#128197;</p>
-                <p className="random-card__type">Дата</p>
+                <Link to="/date-randomiser">
+                    <p className="random-card__icon">&#128197;</p>
+                    <p className="random-card__type">Дата</p>
+                </Link>
             </div>
             <div className="random-card">
                 <p className="random-card__icon">&#128274;</p>
