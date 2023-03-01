@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
   height: 100%;
   line-height: 1;
-  font-size: 1.3vh;
+  font-size: 10px;
   color: #000;
 }
 
@@ -82,7 +82,7 @@ html, body {
   padding: 1rem;
   border: 2px solid #E5184B;
   border-radius: 10px;
-  box-shadow: 0 0 6px #64dd17;
+  box-shadow: 0 0 0.439vw #64dd17;
   cursor: pointer;
 }
 
@@ -122,25 +122,67 @@ html, body {
 }
 
 .date-header {
-  margin-bottom: 20px;
+  margin-bottom: 2.61vh;
 }
 
 .control-panel {
   display: flex;
-  width: 1200px;
+  width: 88vw;
   justify-content: space-between;
-  margin: 0 auto 75px;
+  margin: 0 auto 9.8vh;
 }
 
 .control-btn {
-  width: 150px;
-  height: 50px;
+  width: 11vw;
+  height: 6.5vh;
   background: linear-gradient(#601EAA, #A174D4);
   border-radius: 10px;
   cursor: pointer;
   color: white;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1099px) {
+  .control-btn {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 798px) {
+  .control-btn {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 598px) {
+  .control-btn {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 749px) {
+  .control-btn {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 399px) {
+  .control-btn {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 342px) {
+  .control-btn {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 249px) {
+  .control-btn {
+    font-size: 1rem;
+  }
 }
 
 .control-btn:hover {
@@ -148,19 +190,19 @@ html, body {
 }
 
 .date-main {
-  width: 1300px;  
+  width: 88vw;  
   margin: 0 auto;
 }
 
 .date-result {
-  max-width: 1300px;
-  min-width: 400px;
+  max-width: 88vw;
+  min-width: 29vw;
   width: min-content;
-  height: 100px;
-  margin: 0 auto 50px;
-  box-shadow: 0 0 6px #bdbdbd;
-  font-size: 20px;
-  padding: 5px;
+  height: 16vh;
+  margin: 0 auto 7.5vh;
+  box-shadow: 0 0 0.439vw #bdbdbd;
+  font-size: 2rem;
+  padding: 0.65vh 0.8vh;
   font-family: Roboto;
   color: #601EAA;
   font-weight: 600;
@@ -168,27 +210,94 @@ html, body {
   line-height: 120%;
 }
 
+@media (max-width: 1126px) {
+  .date-result {
+    min-width: 35vw;
+  }
+}
+
+@media (max-width: 898px) {
+  .date-result {
+    min-width: 40vw;
+  }
+}
+
+@media (max-width: 785px) {
+  .date-result {
+    min-width: 45vw;
+  }
+}
+
+@media (max-width: 698px) {
+  .date-result {
+    min-width: 55vw;
+  }
+}
+
+@media (max-width: 571px) {
+  .date-result {
+    min-width: 70vw;
+  }
+}
+
+@media (max-width: 449px) {
+  .date-result {
+    min-width: 90vw;
+  }
+}
+
+@media (max-width: 349px) {
+  .date-result {
+    font-size: 1.5rem;
+  }
+}
+
 .date-buttons {
   display: flex;
-  width: 250px;
-  height: 250px;
+  width: 18vw;
+  height: 40vh;
   flex-wrap: wrap;
-  column-gap: 50px;
+  column-gap: 3.4vw;
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .date-buttons {
+    width: 36vw;
+    column-gap: 6.8vw;
+  }
+}
+
+@media (max-width: 524px) {
+  .date-buttons {
+    width: 72vw;
+    column-gap: 13.6vw;
+  }
+}
+
 .date-btn {
-  width: 100px;
-  height: 100px;
+  width: 7.3vw;
+  height: 16vh;
   background: linear-gradient(#64dd17, #f1f8e9);
-  padding: 1rem;
-  border: 2px solid #E5184B;
-  border-radius: 10px;
-  box-shadow: 0 0 6px #64dd17;
+  border: 0.15vw solid #E5184B;
+  border-radius: 0.73vw;
+  box-shadow: 0 0 0.439vw #64dd17;
   cursor: pointer;
   color: #E5184B;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1024px) {
+  .date-btn {
+    width: 14.6vw
+  }
+}
+
+@media (max-width: 524px) {
+  .date-btn {
+    width: 29.2vw
+  }
 }
 
 .date-btn:hover {
