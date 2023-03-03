@@ -13,8 +13,10 @@ function Main() {
                 </Link>
             </div>
             <div className="random-card">
-                <p className="random-card__icon">&#128274;</p>
-                <p className="random-card__type">Пароли</p>
+                <Link to="/password-randomiser"> 
+                    <p className="random-card__type">Пароли</p>
+                    <p className="random-card__icon">&#128274;</p>
+                </Link>
             </div>
             <div className="random-card">
                 <p className="random-card__icon"><b>#</b></p>

@@ -37,7 +37,7 @@ function DateRandomiser() {
                     <button className="control-btn">← Вернуться</button>
                 </Link>
                 <button className="control-btn" onClick={() => setResult([])}>Сбросить</button>
-            </div>
+        </div>
         <main className="date-main">
             <div className="date-result">
                 {result}

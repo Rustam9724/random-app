@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from "./components/Main";
 import DateRandomiser from "./components/DateRandomiser";
+import PasswordRandomiser from './components/PasswordRandomiser';
 
 function App() {
   return (<>
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/date-randomiser/" element={<DateRandomiser />} />
+        <Route path="/password-randomiser/" element={<PasswordRandomiser />} />
       </Routes>
     </Router>
   </>)
