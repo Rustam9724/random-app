@@ -194,7 +194,7 @@ html, body {
   margin: 0 auto;
 }
 
-.date-result {
+.result {
   max-width: 88vw;
   min-width: 29vw;
   width: min-content;
@@ -211,43 +211,43 @@ html, body {
 }
 
 @media (max-width: 1126px) {
-  .date-result {
+  .result {
     min-width: 35vw;
   }
 }
 
 @media (max-width: 898px) {
-  .date-result {
+  .result {
     min-width: 40vw;
   }
 }
 
 @media (max-width: 785px) {
-  .date-result {
+  .result {
     min-width: 45vw;
   }
 }
 
 @media (max-width: 698px) {
-  .date-result {
+  .result {
     min-width: 55vw;
   }
 }
 
 @media (max-width: 571px) {
-  .date-result {
+  .result {
     min-width: 70vw;
   }
 }
 
 @media (max-width: 449px) {
-  .date-result {
+  .result {
     min-width: 90vw;
   }
 }
 
 @media (max-width: 349px) {
-  .date-result {
+  .result {
     font-size: 1.5rem;
   }
 }
@@ -275,7 +275,7 @@ html, body {
   }
 }
 
-.date-btn {
+.btn {
   width: 7.3vw;
   height: 16vh;
   background: linear-gradient(#64dd17, #f1f8e9);
@@ -289,17 +289,97 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-  .date-btn {
+  .btn {
     width: 14.6vw
   }
 }
 
 @media (max-width: 524px) {
-  .date-btn {
+  .btn {
     width: 29.2vw
   }
 }
 
-.date-btn:hover {
+.btn:hover {
   background: #64dd17;
+}
+
+.password-header {
+  margin-bottom: 20px;
+}
+
+.password-main {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 0 auto;
+  border: 1px solid #64dd17;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.password-checkboxes {
+  width: 15vw;
+}
+
+.password-label {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  align-items: center;
+}
+
+.password-label > span {
+  font-size: 1.5rem;
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+.password-custom-label {
+  width: 40px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+input:checked + .password-label > .password-custom-label {
+  background-color:#64dd17;
+}
+
+input:checked + .password-label > .password-custom-label > .password-custom-tumbler {
+  margin-left: 18px;
+}
+
+input[type="text"] {
+  border: 1px solid #64dd17;
+  border-radius: 5px;
+  width: 45px;
+  height: 25px;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.password-custom-tumbler {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100%;
+  margin-left: 2px;
+  transition: all 250ms;
+}
+
+.password-resultblock {
+  text-align: center;
+}
+
+.password-result {
+  margin-bottom: 20px;
+  width: 29vw;
+}
+
+.password-btn {
+  height: 40px;
+  width: 150px;
 }

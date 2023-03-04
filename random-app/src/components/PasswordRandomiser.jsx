@@ -13,6 +13,7 @@ function PasswordRandomiser() {
 
     function getRandomPassword() {
         let currentResult = '';
+        
         for (let i = 1; i <= passwordLength; i++) { 
             const combinationItemNumber = Math.floor(Math.random() * combination.length)
             if (combination[combinationItemNumber] === 'numbers') {
@@ -25,7 +26,17 @@ function PasswordRandomiser() {
                 currentResult += symbols[Math.floor(Math.random() * 32)];
             }
         }   
-        setResult(currentResult);
+
+        // if (combination.includes('numbers')) {
+        //     if (!/\d/.test(currentResult)) {
+        //         console.log('Hi!');
+        //         getRandomPassword();
+        //     }
+        // }
+
+        if (passwordLength >= combination.length) {
+            setResult(currentResult)
+        }
     }
 
     function reset() {
@@ -35,6 +46,7 @@ function PasswordRandomiser() {
         setIsUpperCase(true);
         setIsSymbols(true);
         setCombination(['numbers', 'lower-case', 'upper-case', 'symbols']);
+        setPasswordLength(10)
     }
 
     function checkHandler(event) {
@@ -89,30 +101,42 @@ function PasswordRandomiser() {
             </div>
             <main className="password-main">
                 <div className="password-checkboxes">
-                    <label>
+                    <input id="numbers-input" data-symboltype="numbers" type="checkbox" checked={isNumbers} onChange={(event) => checkHandler(event)} hidden/>
+                    <label className="password-label" htmlFor="numbers-input">
                         <span>Цифры</span>
-                        <input data-symboltype="numbers" type="checkbox" checked={isNumbers} onChange={(event) => checkHandler(event)}/>
+                        <div className="password-custom-label">
+                            <div className="password-custom-tumbler"></div>
+                        </div>    
                     </label>
-                    <label>
+                    <input id="lower-case-input" data-symboltype="lower-case" type="checkbox" checked={isLowerCase} onChange={(event) => checkHandler(event)} hidden/>
+                    <label className="password-label" htmlFor="lower-case-input">
                         <span>Строчные буквы</span>
-                        <input data-symboltype="lower-case" type="checkbox" checked={isLowerCase} onChange={(event) => checkHandler(event)}/>
+                        <div className="password-custom-label">
+                            <div className="password-custom-tumbler"></div>
+                        </div>
                     </label>
-                    <label>
+                    <input id="upper-case-input" data-symboltype="upper-case" type="checkbox" checked={isUpperCase} onChange={(event) => checkHandler(event)} hidden/>
+                    <label className="password-label" htmlFor="upper-case-input">
                         <span>Прописные буквы</span>
-                        <input data-symboltype="upper-case" type="checkbox" checked={isUpperCase} onChange={(event) => checkHandler(event)}/>
+                        <div className="password-custom-label">
+                            <div className="password-custom-tumbler"></div>
+                        </div>
                     </label>
-                    <label>
+                    <input id="symbols-input" data-symboltype="symbols" type="checkbox" checked={isSymbols} onChange={(event) => checkHandler(event)} hidden/>
+                    <label className="password-label" htmlFor="symbols-input">
                         <span>Символы</span>
-                        <input data-symboltype="symbols" type="checkbox" checked={isSymbols} onChange={(event) => checkHandler(event)}/>
+                        <div className="password-custom-label">
+                            <div className="password-custom-tumbler"></div>
+                        </div>
                     </label>
-                    <label>
+                    <label className="password-label">
                         <span>Длина пароля:</span>
                         <input type="text" value={passwordLength} onChange={(event) => setPasswordLength(event.target.value)}/>
                     </label>
                 </div>
                 <div className="password-resultblock">
-                    <div className="result">{result}</div>
-                    <button onClick={getRandomPassword}>Сгенерировать</button>
+                    <div className="password-result result">{result}</div>
+                    <button className="btn password-btn" onClick={getRandomPassword}>Сгенерировать</button>
                 </div>
             </main>
         </>

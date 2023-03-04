@@ -39,14 +39,14 @@ function DateRandomiser() {
                 <button className="control-btn" onClick={() => setResult([])}>Сбросить</button>
         </div>
         <main className="date-main">
-            <div className="date-result">
+            <div className="date-result result">
                 {result}
             </div>
             <div className="date-buttons">
-                <button className="date-btn" onClick={getRandomDay}>День недели</button>
-                <button className="date-btn" onClick={getRandomTime}>Время</button>
-                <button className="date-btn" onClick={getRandomDate}>Число</button>
-                <button className="date-btn" onClick={getRandomMonth}>Месяц</button>
+                <button className="date-btn btn" onClick={getRandomDay}>День недели</button>
+                <button className="date-btn btn" onClick={getRandomTime}>Время</button>
+                <button className="date-btn btn" onClick={getRandomDate}>Число</button>
+                <button className="date-btn btn" onClick={getRandomMonth}>Месяц</button>
             </div>
         </main>
         </>
