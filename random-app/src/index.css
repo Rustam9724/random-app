@@ -195,11 +195,6 @@ html, body {
 }
 
 .result {
-  max-width: 88vw;
-  min-width: 29vw;
-  width: min-content;
-  height: 16vh;
-  margin: 0 auto 7.5vh;
   box-shadow: 0 0 0.439vw #bdbdbd;
   font-size: 2rem;
   padding: 0.65vh 0.8vh;
@@ -210,44 +205,53 @@ html, body {
   line-height: 120%;
 }
 
+.date-result {
+  max-width: 88vw;
+  min-width: 29vw;
+  width: min-content;
+  height: 16vh;
+  margin: 0 auto 7.5vh;
+  
+}
+
 @media (max-width: 1126px) {
-  .result {
+  .date-result {
     min-width: 35vw;
   }
 }
 
 @media (max-width: 898px) {
-  .result {
+  .date-result {
     min-width: 40vw;
   }
 }
 
 @media (max-width: 785px) {
-  .result {
+  .date-result {
     min-width: 45vw;
   }
 }
 
 @media (max-width: 698px) {
-  .result {
+  .date-result {
     min-width: 55vw;
   }
 }
 
 @media (max-width: 571px) {
-  .result {
+  .date-result {
     min-width: 70vw;
   }
 }
 
 @media (max-width: 449px) {
-  .result {
+  .date-result {
     min-width: 90vw;
   }
 }
 
 @media (max-width: 349px) {
-  .result {
+  .date-result {
     font-size: 1.5rem;
   }
 }
@@ -305,7 +309,7 @@ html, body {
 }
 
 .password-header {
-  margin-bottom: 20px;
+  margin-bottom: 3.2vh;
 }
 
 .password-main {
@@ -313,14 +317,109 @@ html, body {
   justify-content: space-between;
   width: 50vw;
   margin: 0 auto;
-  border: 1px solid #64dd17;
-  border-radius: 15px;
+  border: 0.0732vw solid #64dd17;
+  border-radius: 1.098vw;
   padding: 1rem;
 }
 
-.password-checkboxes {
-  width: 15vw;
+@media (max-width: 1249px) {
+  .password-main {
+    width: 60vw;
+  }
 }
+
+@media (max-width: 1024px) {
+  .password-main {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 874px) {
+  .password-main {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 774px) {
+  .password-main {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 394px) {
+  .password-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-height: 434px) {
+  .password-main {
+    height: 40vh;
+  }
+}
+
+@media (max-height: 314px) {
+  .password-main {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 394px) and (max-height: 434px) {
+  .password-main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 240px) and (max-height: 320px) {
+  .password-main {
+    justify-content: flex-end;
+    row-gap: 1.5rem;
+  }
+}
+
+.password-checkboxes {
+  width: 30%;
+}
+
+@media (max-width: 614px) {
+  .password-checkboxes {
+    width: 40%;
+  }
+}
+
+@media (max-width: 466px) {
+  .password-checkboxes {
+    width: 50%;
+  }
+}
+
+@media (max-width: 394px) {
+  .password-checkboxes {
+    width: 70%;
+  }
+}
+
+@media (max-width: 276px) {
+  .password-checkboxes {
+    width: 85%;
+  }
+}
+
+@media (max-height: 434px) {
+  .password-checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 240px) and (max-height: 320px) {
+  .password-checkboxes {
+    height: 40vh;
+  }
+}
+
 
 .password-label {
   display: flex;
@@ -354,11 +453,23 @@ input:checked + .password-label > .password-custom-label > .password-custom-tumb
 
 input[type="text"] {
   border: 1px solid #64dd17;
-  border-radius: 5px;
-  width: 45px;
-  height: 25px;
-  font-size: 15px;
-  padding: 2px;
+  border-radius: 0.366vw;
+  width: 22%;
+  height: 4vh;
+  font-size: 1.5rem;
+  padding: 0.32vh 0.146vw;
+}
+
+@media (max-width: 849px) {
+  input[type="text"] {
+    width: 30%;
+  }
+}
+
+@media (max-height: 364px) {
+  input[type="text"] {
+    height: 6vh;
+  }
 }
 
 .password-custom-tumbler {
@@ -372,14 +483,67 @@ input[type="text"] {
 
 .password-resultblock {
   text-align: center;
+  width: 58%;
 }
 
+@media (max-width: 614px) {
+  .password-resultblock {
+    width: 45%;
+  }
+}
+
+@media (max-width: 466px) {
+  .password-resultblock {
+    width: 35%;
+  }
+}
+
+@media (max-width: 394px) {
+  .password-resultblock {
+    width: 80%;
+
+  }
+}
+
+/* @media (max-height: 434px) {
+  .password-resultblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+} */
+
 .password-result {
-  margin-bottom: 20px;
-  width: 29vw;
+  margin-bottom: 3.2vh;
+  width: 100%;
+  height: 16vh;
+}
+
+@media (max-width: 400px) {
+  .password-result {
+    font-size: 1.5rem;
+  }
 }
 
 .password-btn {
-  height: 40px;
-  width: 150px;
+  height: 6.4vh;
+  width: 38%;
+}
+
+@media (max-width: 649px) {
+  .password-btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 534px) {
+  .password-btn {
+    width: 95%;
+  }
+}
+
+@media (max-width: 444px) {
+  .password-btn {
+    font-size: 1.5rem;
+  }
 }
