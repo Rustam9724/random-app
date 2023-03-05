@@ -19,8 +19,10 @@ function Main() {
                 </Link>
             </div>
             <div className="random-card">
-                <p className="random-card__icon"><b>#</b></p>
-                <p className="random-card__type">Число</p>
+                <Link to="/number-randomiser"> 
+                    <p className="random-card__icon"><b>#</b></p>
+                    <p className="random-card__type">Число</p>
+                </Link>
             </div>
             <div className="random-card">
                 <p className="random-card__icon"><b>&#x3B1;</b></p>
