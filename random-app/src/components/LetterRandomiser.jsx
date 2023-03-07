@@ -37,16 +37,14 @@ function LetterRandomiser() {
             </div>
             <main className="letters-main">
                 <div className="letters-inputs">
-                    <input type="radio" name="letters-language" id="letters-en-language" checked={language === 'english' ? true : false} onChange={(event) => changeHandler(event)} value="english"/>
-                    {/* <label className="numbers-label">
-                        <span>Минимум:</span>
-                        <input type="text" value={minimum} onChange={(event) => setMinimum(+event.target.value)}/>
-                    </label> */}
-                    <input type="radio" name="letters-language" id="letters-ru-language"  checked={language === 'russian' ? true : false} onChange={(event) => changeHandler(event)} value="russian"/>
-                    {/* <label className="numbers-label">
-                        <span>Максимум:</span>
-                        <input type="text" value={maximum} onChange={(event) => setMaximum(+event.target.value)}/>
-                    </label> */}
+                    <input className="letters-input" type="radio" name="letters-language" id="letters-en-language" checked={language === 'english' ? true : false} onChange={(event) => changeHandler(event)} value="english" hidden/>
+                    <label className="letters-label" for="letters-en-language">
+                        Английские буквы
+                    </label>
+                    <input className="letters-input" type="radio" name="letters-language" id="letters-ru-language"  checked={language === 'russian' ? true : false} onChange={(event) => changeHandler(event)} value="russian" hidden/>
+                    <label className="letters-label" for="letters-ru-language">
+                        Русские буквы
+                    </label>
                 </div>
                 <div className="letters-resultblock">
                     <div className="letters-result result">{result}</div>
