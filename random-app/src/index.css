@@ -596,7 +596,7 @@ input[type="text"] {
   justify-content: center;
   row-gap: 1.6vh;
   align-items: center;
-  width: 40%; /*140px*/
+  width: 40%;
 }
 
 @media (max-width: 334px) {
@@ -608,7 +608,7 @@ input[type="text"] {
 .numbers-label {
   display: flex;
   justify-content: space-between;
-  width: 100%; /*140px*/
+  width: 100%;
   align-items: center;
 }
 
@@ -629,7 +629,7 @@ input[type="text"] {
 }
 
 .numbers-inputs input {
-  width: 36%; /*50px*/
+  width: 36%;
   padding-left: 5px;
 }
 
@@ -652,8 +652,8 @@ input[type="text"] {
 }
 
 .numbers-resultblock {
-  height: 25.6vh; /*160px*/
-  width: 43%; /*150px*/
+  height: 25.6vh;
+  width: 43%;
 }
 
 @media (max-width: 324px) {
@@ -663,16 +663,16 @@ input[type="text"] {
 }
 
 .numbers-result {
-  height: 16vh; /*100px*/
-  margin-bottom: 1.6vh; /*10px*/
+  height: 16vh;
+  margin-bottom: 1.6vh;
   text-align: center;
-  padding-top: 6.4vh; /*40px*/
+  padding-top: 6.4vh;
   font-size: 2.5rem;
 }
 
 .numbers-btn {
-  height: 8vh; /*50px*/
-  width: 100%; /*150px*/
+  height: 8vh;
+  width: 100%;
 }
 
 @media (max-width: 274px) {

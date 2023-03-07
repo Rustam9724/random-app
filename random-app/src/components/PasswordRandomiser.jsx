@@ -27,13 +27,6 @@ function PasswordRandomiser() {
             }
         }   
 
-        // if (combination.includes('numbers')) {
-        //     if (!/\d/.test(currentResult)) {
-        //         console.log('Hi!');
-        //         getRandomPassword();
-        //     }
-        // }
-
         if (passwordLength >= combination.length) {
             setResult(currentResult)
         }
