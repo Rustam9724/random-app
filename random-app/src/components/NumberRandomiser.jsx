@@ -8,7 +8,9 @@ function NumberRandomiser() {
     const [result, setResult] = useState(null);
 
     function reset() {
-    
+        setMinimum(0);
+        setMaximum(10);
+        setResult(null);
     }
 
     function getRandomNumber() {
