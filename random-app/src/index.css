@@ -186,6 +186,12 @@ html, body {
   }
 }
 
+@media (min-height: 1200px) {
+  .control-btn {
+    font-size: 2rem;
+  }
+}
+
 .control-btn:hover {
   background: #601EAA;
 }
@@ -542,24 +548,67 @@ input[type="text"] {
 
 .numbers-main {
   display: flex;
-  /* background-color: red; */
-  width: 350px;
+  width: 26%; /*350px*/
   margin: 0 auto;
   justify-content: space-between;
 }
+
+@media (max-width: 1239px) {
+  .numbers-main {
+    width: 35%;
+  }
+}
+
+@media (max-width: 899px) {
+  .numbers-main {
+    width: 40%;
+  }
+}
+
+@media (max-width: 794px) {
+  .numbers-main {
+    width: 50%;
+  }
+}
+
+@media (max-width: 634px) {
+  .numbers-main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 524px) {
+  .numbers-main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 399px) {
+  .numbers-main {
+    width: 95%;
+  }
+}
+
 
 .numbers-inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 10px;
+  row-gap: 1.6vh;
   align-items: center;
+  width: 40%; /*140px*/
+}
+
+@media (max-width: 334px) {
+  .numbers-inputs {
+    width: 45%;
+  }
 }
 
 .numbers-label {
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 100%; /*140px*/
   align-items: center;
 }
 
@@ -567,23 +616,67 @@ input[type="text"] {
   font-size: 1.5rem;
 }
 
+@media (max-width: 299px) {
+  .numbers-inputs span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-height: 1200px) {
+  .numbers-inputs span {
+    font-size: 1.8rem;
+  }
+}
+
 .numbers-inputs input {
-  width: 50px;
+  width: 36%; /*50px*/
+  padding-left: 5px;
+}
+
+@media (max-height: 399px) {
+  .numbers-inputs input {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 274px) {
+  .numbers-inputs input {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-height: 1200px) {
+  .numbers-inputs input {
+    font-size: 1.8rem;
+  }
 }
 
 .numbers-resultblock {
-  height: 160px;
+  height: 25.6vh; /*160px*/
+  width: 43%; /*150px*/
+}
+
+@media (max-width: 324px) {
+  .numbers-resultblock {
+    width: 50%;
+  }
 }
 
 .numbers-result {
-  height: 100px;
-  margin-bottom: 10px;
+  height: 16vh; /*100px*/
+  margin-bottom: 1.6vh; /*10px*/
   text-align: center;
-  padding-top: 40px;
+  padding-top: 6.4vh; /*40px*/
   font-size: 2.5rem;
 }
 
 .numbers-btn {
-  height: 50px;
-  width: 150px;
+  height: 8vh; /*50px*/
+  width: 100%; /*150px*/
+}
+
+@media (max-width: 274px) {
+  .numbers-btn {
+    font-size: 1.3rem;
+  }
 }
