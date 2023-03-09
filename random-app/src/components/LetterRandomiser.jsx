@@ -38,17 +38,17 @@ function LetterRandomiser() {
             <main className="letters-main">
                 <div className="letters-inputs">
                     <input className="letters-input" type="radio" name="letters-language" id="letters-en-language" checked={language === 'english' ? true : false} onChange={(event) => changeHandler(event)} value="english" hidden/>
-                    <label className="letters-label" for="letters-en-language">
+                    <label className="letters-label" htmlFor="letters-en-language">
                         Английские буквы
                     </label>
                     <input className="letters-input" type="radio" name="letters-language" id="letters-ru-language"  checked={language === 'russian' ? true : false} onChange={(event) => changeHandler(event)} value="russian" hidden/>
-                    <label className="letters-label" for="letters-ru-language">
+                    <label className="letters-label" htmlFor="letters-ru-language">
                         Русские буквы
                     </label>
                 </div>
                 <div className="letters-resultblock">
                     <div className="letters-result result">{result}</div>
-                    <button className="btn numbers-btn" onClick={getRandomLetter}>Сгенерировать</button>
+                    <button className="btn letters-btn" onClick={getRandomLetter}>Сгенерировать</button>
                 </div>
             </main>
         </>
