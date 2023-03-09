@@ -31,8 +31,10 @@ function Main() {
                 </Link>
             </div>
             <div className="random-card">
-                <p className="random-card__icon">&#x1F44D;&#128078;</p>
-                <p className="random-card__type">Да или нет</p>
+                <Link to="/yesno-randomiser">
+                    <p className="random-card__icon">&#x1F44D;&#128078;</p>
+                    <p className="random-card__type">Да или нет</p>
+                </Link>
             </div>
             <div className="random-card">
                 <p className="random-card__icon">&#127912;</p>
