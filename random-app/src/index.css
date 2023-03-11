@@ -952,3 +952,57 @@ input[type="text"] {
   width: 60%; /*150px*/
   height: 8vh;
 }
+
+.color-section {
+  height: 100vh;
+}
+
+.letters-inputs {
+  background-color: gray;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 3.2vh;
+  height: 2.5rem;
+  align-items: center;
+  border-radius: 0.36vw
+}
+
+@media (max-width: 413px) {
+  .letters-inputs {
+    width: 95%;
+    border-radius: 2vw;
+  }
+}
+
+@media (width: 414px) and (height: 896px) {
+  .letters-inputs {
+    width: 75%;
+  }
+}
+
+.color-inputs {
+  background-color: gray;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 3.2vh;
+  height: 2.5rem;
+  align-items: center;
+  border-radius: 0.36vw
+}
+
+.color-label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2rem;
+  line-height: 120%;
+  background-color: gray;
+  border-radius: 0.36vw;
+  padding: 0 1.6vh;
+}
+
+.color-input:checked + .color-label {
+  background-color: white;
+  cursor:context-menu;
+} 

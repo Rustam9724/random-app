@@ -5,6 +5,7 @@ import PasswordRandomiser from './components/PasswordRandomiser';
 import NumberRandomiser from './components/NumberRandomiser';
 import LetterRandomiser from './components/LetterRandomiser';
 import YesOrNoRandomiser from './components/YesOrNoRandomiser';
+import ColorRandomiser from './components/ColorRandomiser';
 
 function App() {
   return (<>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/number-randomiser/" element={<NumberRandomiser />} />
         <Route path="/letter-randomiser/" element={<LetterRandomiser />} />
         <Route path="/yesno-randomiser/" element={<YesOrNoRandomiser />} />
+        <Route path="/color-randomiser/" element={<ColorRandomiser />} />
       </Routes>
     </Router>
   </>)

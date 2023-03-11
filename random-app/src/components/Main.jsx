@@ -37,8 +37,10 @@ function Main() {
                 </Link>
             </div>
             <div className="random-card">
-                <p className="random-card__icon">&#127912;</p>
-                <p className="random-card__type">Цвета</p>
+                <Link to={"/color-randomiser"}>
+                    <p className="random-card__icon">&#127912;</p>
+                    <p className="random-card__type">Цвета</p>
+                </Link>
             </div>
         </div>
     </>
