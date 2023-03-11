@@ -9,7 +9,7 @@ import ColorRandomiser from './components/ColorRandomiser';
 
 function App() {
   return (<>
-    <Router basename="/">
+    <Router basename="https://rustam9724.github.io/random-app/">
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/date-randomiser/" element={<DateRandomiser />} />
