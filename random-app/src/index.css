@@ -863,23 +863,92 @@ input[type="text"] {
 }
 
 .yesno-main {
-  width: 250px;
+  width: 18%; /*250px*/
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 175px
+  height: 28vh;
+}
+
+@media (max-width: 1224px) {
+  .yesno-main {
+    width: 25%;
+    height: 35vh;
+  }
+}
+
+@media (max-width: 874px) {
+  .yesno-main {
+    width: 30%;
+  }
+}
+
+@media (max-width: 724px) {
+  .yesno-main {
+    width: 35%;
+  }
+}
+
+@media (max-width: 624px) {
+  .yesno-main {
+    width: 45%;
+  }
+}
+
+@media (max-width: 484px) {
+  .yesno-main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 364px) {
+  .yesno-main {
+    width: 85%;
+  }
+}
+
+@media (max-width: 259px) {
+  .yesno-main {
+    width: 95%;
+  }
+}
+
+@media (max-height: 564px) {
+  .yesno-main {
+    height: 35vh;
+  }
+}
+
+@media (max-height: 404px) {
+  .yesno-main {
+    height: 45vh;
+  }
 }
 
 .yesno-result {
-  width: 100px;
-  height: 100px;
-  padding-top: 40px;
+  width: 40%; /*100px*/
+  aspect-ratio: 1;
+  padding-top: 2.9vw;
   text-align: center;
 }
 
+@media (max-width: 624px) {
+  .yesno-result {
+    width: 14vw;
+    padding-top: 5.6vw;
+  }
+}
+
+@media (max-width: 324px) {
+  .yesno-result {
+    width: 21vw;
+    padding-top: 8.3vw;
+  }
+}
+
 .yesno-btn {
-  width: 150px;
-  height: 50px;
+  width: 60%; /*150px*/
+  height: 8vh;
 }
