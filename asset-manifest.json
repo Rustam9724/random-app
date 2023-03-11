@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/random-app/static/css/main.ac7ef239.css",
+    "main.js": "/random-app/static/js/main.b5c31c38.js",
+    "static/media/Roboto.ttf": "/random-app/static/media/Roboto.33c6cdbc694881567da1.ttf",
+    "index.html": "/random-app/index.html",
+    "main.ac7ef239.css.map": "/random-app/static/css/main.ac7ef239.css.map",
+    "main.b5c31c38.js.map": "/random-app/static/js/main.b5c31c38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac7ef239.css",
+    "static/js/main.b5c31c38.js"
+  ]
+}
